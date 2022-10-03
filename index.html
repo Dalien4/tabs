@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Tabs</title>
   </head>
+
   <body>
     <div class="container">
       <header class="header">
@@ -18,12 +22,12 @@
       <main class="main">
         <div class="main__image"></div>
         <div class="tab">
-          <ul class="tab__header">
-            <li><a href="#" class="tab__link" id="history-tab">History</a></li>
-            <li><a href="#" class="tab__link" id="vision-tab">Vision</a></li>
-            <li><a href="#" class="tab__link" id="goals-tab">Goals</a></li>
-          </ul>
-          <div class="tab__content" id="history-tab-content">
+          <div class="tab__header">
+            <a href="#" class="tab__link tab__link--active" id="history-tab">History</a>
+            <a href="#" class="tab__link" id="vision-tab">Vision</a>
+            <a href="#" class="tab__link" id="goals-tab">Goals</a>
+          </div>
+          <div class="tab__content tab__content--active" id="history-tab-content">
             <h2 class="tab__title">History</h2>
             <p class="tab__description">
               I'm baby wolf pickled schlitz try-hard normcore marfa man bun

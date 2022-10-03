@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.7;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: lightblue;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+.header__title {
+  font-size: 4rem;
+}
+.header__text {
+  color: gray;
+  font-size: 1.8rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.main__image {
+  background-image: url("../images/hero-bcg.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  height: 300px;
+  width: 45%;
+}
+
+.tab {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 45%;
+}
+.tab__header {
+  display: flex;
+}
+.tab__link {
+  display: inline-block;
+  height: 50px;
+  background-color: lightgray;
+  text-align: center;
+  width: 33.6%;
+  font-size: 1.8rem;
+  padding-top: 10px;
+  text-decoration: none;
+  font-weight: 100;
+  color: black;
+}
+.tab__link--active {
+  background-color: white;
+}
+.tab__content {
+  padding: 20px 20px 40px;
+  display: none;
+}
+.tab__content--active {
+  display: block;
+}
+.tab__title {
+  font-size: 1.8rem;
+}
+.tab__description {
+  color: gray;
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+.list__item {
+  list-style: none;
+}
+
+@media screen and (max-width: 990px) {
+  .main {
+    flex-direction: column;
+  }
+  .main__image, .main .tab {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

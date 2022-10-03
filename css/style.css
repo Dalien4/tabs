@@ -71,7 +71,13 @@ body {
   font-weight: 100;
   color: black;
 }
+.tab__link:hover {
+  background-color: lightblue;
+}
 .tab__link--active {
+  background-color: white;
+}
+.tab__link--active:hover {
   background-color: white;
 }
 .tab__content {
@@ -92,6 +98,7 @@ body {
 
 .list__item {
   list-style: none;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 990px) {

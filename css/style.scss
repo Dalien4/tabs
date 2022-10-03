@@ -75,8 +75,16 @@ body {
     font-weight: 100;
     color: black;
 
+    &:hover{
+      background-color: lightblue;
+    }
+
     &--active{
         background-color: white;
+
+        &:hover{
+          background-color: white;
+        }
     }
   }
 
@@ -103,6 +111,7 @@ body {
 .list {
   &__item {
     list-style: none;
+    font-size: 1.8rem;
   }
 }
 
